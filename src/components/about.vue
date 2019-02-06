@@ -7,15 +7,10 @@
         
     
     <p >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure
-        sequi ipsam cum facere maxime suscipit, nam nesciunt deserunt 
-       
-        reprehenderit in nobis! Vitae aspernatur perspiciatis, et nostrum harum ad quia!
+        DevHost:19 is an annual Student Developers meet organised by Sahyadri Open-Source Community (SOSC) to bring together young and talented developers from in and around Mangalore. DevHost:19 is aimed to create a platform to join together clubs and organizations to spread the information on latest techologies and trends in the IT industry and train the students to be part of it.
         </p>
         <p >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla non praesentium
-            necessitatibus dignissimos voluptas fugit voluptate officia, atque repellendus autem 
-             quaerat labore facere veniam optio voluptates quisquam illo sit.
+            DevHost:19 is a two day event which will take place on 24th and 25th March 2019 and will have speakers from various organizations and also will have a 24hrs Hackathon. DevHost:19 is focused on bringing more student developers to foreground. The event is open-to-all and free of cost for anyone who is interested.
         </p>
 
     </div>
