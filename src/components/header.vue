@@ -12,7 +12,8 @@
              </a>
         </span>
          
-        <h1 class="title">DEVHOST:19</h1>
+        <h1 class="title">devhost :<span style="-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; background-image: -webkit-linear-gradient(276deg, #f9643d, #fe2a77);">19</span></h1>
         <ul class="navbar-nav">
             
             <li><a href="#">HOME</a></li>
@@ -61,6 +62,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 body{
     margin: auto;
@@ -103,14 +105,15 @@ body{
     margin: auto;
 }
 .title{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color:white;
     display: block;
-    font-size: 30px;
+    font-size: 35px;
     padding: 15px 0 0 25px;
     margin: 0;
     float: left;
 } 
+
 
 .navbar{
    background-color: #2e3261;

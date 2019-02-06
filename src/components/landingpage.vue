@@ -39,7 +39,7 @@ h1{
     height: 600px;
     width:100%;
     z-index: -1;
-    background-image: url('../assets/bg.jpg');
+    background-image: url('../assets/bg2.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
      -webkit-background-size: cover;
