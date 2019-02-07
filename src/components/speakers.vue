@@ -81,8 +81,8 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 .hl{
-  position: relative;
-    z-index: 1;
+  
+   
     background-color: #f0326b;
     display: inline-block;
     width: 95px;

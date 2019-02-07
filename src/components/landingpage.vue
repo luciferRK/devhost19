@@ -2,8 +2,10 @@
     <div class="ld">
     <div class="bg">
         <div class="content">
-        <h1>Student developers meet</h1>
-        <h1>2019</h1>
+        <h1>Student developers meet
+            <br>
+        <span style="-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; background-image: -webkit-linear-gradient(276deg, #f9643d, #fe2a77);">2019</span></h1>
         <p >
             Join us this march to celebrate our
             <br>

@@ -67,6 +67,7 @@ export default {
 body{
     margin: auto;
     overflow: auto;
+   
 }
 .nav-btn{
 
@@ -118,6 +119,9 @@ body{
 .navbar{
    background-color: #2e3261;
     width: 100%;
+    position: fixed;
+   top: 0;
+
     height: 76px;
     overflow-x: hidden;
     
