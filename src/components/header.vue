@@ -117,9 +117,7 @@ body{
     width: 100%;
     height: 76px;
     overflow-x: hidden;
-    
-    
-    
+    position:fixed;
 }
 .navbar a {
     font-family: 'Open Sans', sans-serif;
