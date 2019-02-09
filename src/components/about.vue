@@ -1,5 +1,5 @@
 <template>
-<div id="main-div" >
+<div id="main-div">
     <div id="title" class="title">
     <h1>About the event</h1>
     </div>
@@ -75,8 +75,8 @@ export default {
       
             bus.$on("about-clicked",()=>{
            document.querySelector('#main-div').scrollIntoView();
-            
-             window.scrollY=50;
+           scrollBy(0,-40); 
+             
         });
         
         
