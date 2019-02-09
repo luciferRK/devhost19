@@ -1,6 +1,6 @@
 <template>
-<div >
-    <div class="title">
+<div id="main-div" >
+    <div id="title" class="title">
     <h1>About the event</h1>
     </div>
     <div  class="content">
@@ -62,13 +62,29 @@
 <script>
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {bus} from '../main'
+
 export default {
     name:'about',
-    created(){
-        AOS.init()
     
+    created(){
+        AOS.init();
+        },
+    
+   mounted(){
+      
+            bus.$on("about-clicked",()=>{
+           document.querySelector('#main-div').scrollIntoView();
+            
+             window.scrollY=50;
+        });
+        
+        
+
     },
-}
+
+    }
+
 </script>
 
 
@@ -159,7 +175,7 @@ h1{
   
   
 }
-@media(min-width:568px){
+@media(max-width:900px){
 }
     
 </style>

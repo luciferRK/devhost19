@@ -1,5 +1,5 @@
 <template>
-<div class="speakers">
+<div id="speaker-div" class="speakers">
     <div class="title">
         <h1 style="margin:auto">Speakers</h1>
        
@@ -67,13 +67,22 @@
 
 <script>
 import AOS from 'aos';
+import {bus} from '../main'
 import 'aos/dist/aos.css';
 export default {
  name:'speakers',
  created(){
         AOS.init()
     
-    },   
+    },
+     mounted(){
+      
+            bus.$on("speakers-clicked",()=>{
+           document.querySelector('#speaker-div').scrollIntoView();
+            
+
+        });  
+    },
 }
 </script>
 
