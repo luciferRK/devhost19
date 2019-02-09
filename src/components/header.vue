@@ -3,7 +3,7 @@
 <div>
     <nav class="navbar">
         <span class="nav-opener">
-            <a href="#" @click="openclosesidenav">
+            <a @click="openclosesidenav">
                 <svg width="30" height="30">
                     <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
                     <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
@@ -12,22 +12,25 @@
              </a>
         </span>
          
-        <h1 class="title">DEVHOST:19</h1>
+        <h1 class="title">devhost :<span style="-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; background-image: -webkit-linear-gradient(276deg, #f9643d, #fe2a77);">19</span></h1>
         <ul class="navbar-nav">
             
             <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SPONSORS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a @click="gotoabout">ABOUT</a></li>
+            <li><a @click="gotospeakers" >SPEAKERS</a></li>
+            <li><a @click="gotosponsor">SPONSORS</a></li>
+             <li><a @click="gotocontact">CONTACT</a></li>
             <button class="nav-btn">REGISTER</button>
         </ul>
         
     </nav>
     <div id="side-menu" class="side-nav">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">SPONSORS</a>
-        <a href="#">CONTACT</a>
+        <a href="#">HOME </a>
+        <a  @click="gotoabout">ABOUT</a>
+        <a  @click="gotospeakers">SPEAKERS</a>
+        <a @click="gotosponsor">SPONSORS</a>
+        <a @click="gotocontact">CONTACT</a>
         <button class="side-nav-btn">REGISTER</button>
     </div>
   
@@ -36,24 +39,55 @@
 </template>
 
 <script>
+import {bus} from '../main'
 export default {
-    name:'header',
-  
+    name:'header', 
+    props:['position'],
+    data(){
+        return{
+            pos:{
+            x:"",
+            y:"",
+        }
+        }
+    },
     components:{
-       
+      
       
     },
   methods:{
             openclosesidenav(){
           
-                if(document.getElementById('side-menu').style.height === '243px'){
+                if(document.getElementById('side-menu').style.height === '290px'){
                     document.getElementById('side-menu').style.height = '0px';
                 }
                 else
-                    document.getElementById('side-menu').style.height = '243px';
+                    document.getElementById('side-menu').style.height = '290px';
                
               
+            },
+
+            gotoabout(){
+               bus.$emit('about-clicked');
+               
+                
+            },
+            gotospeakers(){
+               bus.$emit('speakers-clicked');
+               
+                
+            },
+             gotocontact(){
+               bus.$emit('contact-clicked');
+               
+                
+            },
+             gotosponsor(){
+               bus.$emit('sponsors-clicked');
+               
+                
             }
+
         },
 }
 
@@ -61,10 +95,15 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 body{
     margin: auto;
     overflow: auto;
+   
+}
+a:hover {
+ cursor:pointer;
 }
 .nav-btn{
 
@@ -103,18 +142,23 @@ body{
     margin: auto;
 }
 .title{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color:white;
     display: block;
-    font-size: 30px;
+    font-size: 35px;
     padding: 15px 0 0 25px;
     margin: 0;
     float: left;
 } 
 
+
 .navbar{
+    z-index: 1;
    background-color: #2e3261;
     width: 100%;
+    position: fixed;
+   top: 0;
+
     height: 76px;
     overflow-x: hidden;
     

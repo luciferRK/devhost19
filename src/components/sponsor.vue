@@ -1,5 +1,5 @@
 <template>
-    <div class="sponsors">
+    <div id="sponsors" class="sponsors">
         <div class="title">
         <h1>Sponsors</h1>
         </div>
@@ -9,8 +9,17 @@
     </div>
 </template>
 <script>
+import {bus} from '../main'
 export default {
-    name:'sponsor'
+    name:'sponsor',
+    mounted(){
+      
+            bus.$on("sponsors-clicked",()=>{
+           document.querySelector('#sponsors').scrollIntoView();
+            
+
+        });  
+    },
 }
 </script>
 
