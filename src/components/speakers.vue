@@ -79,7 +79,7 @@ export default {
       
             bus.$on("speakers-clicked",()=>{
            document.querySelector('#speaker-div').scrollIntoView();
-            
+            scrollBy(0,-80); 
 
         });  
     },
