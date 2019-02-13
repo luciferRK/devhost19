@@ -110,6 +110,7 @@ a:hover {
     border: none;
     font-family: 'Open Sans', sans-serif;
     float: right;
+    font-size: 15px;
     height: 76px;
     margin: auto;
     width: 160px;
