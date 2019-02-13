@@ -141,6 +141,9 @@ a:hover {
     padding: 0;
     margin: auto;
 }
+.side-nav-btn,.navbar-nav a,.side-nav a,.nav-opener a:focus{
+    outline: none;
+}
 .title{
     font-family: 'Roboto', sans-serif;
     color:white;
@@ -161,9 +164,7 @@ a:hover {
 
     height: 76px;
     overflow-x: hidden;
-    
-    
-    
+    position:fixed;
 }
 .navbar a {
     font-family: 'Open Sans', sans-serif;
